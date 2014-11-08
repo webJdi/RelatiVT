@@ -9,6 +9,9 @@ $(document).ready(function(){
 		if((pos-120)>scrollTop)
 		{
 			$('.relatiVT').css("transform","translateY("+scrollTop/val+"px)");
+			$('.relatiVT').css("-webkit-transform","translateY("+scrollTop/val+"px)"); // for chrome
+			$('.relatiVT').css("-moz-transform","translateY("+scrollTop/val+"px)"); // for firefox
+			$('.relatiVT').css("-o-transform","translateY("+scrollTop/val+"px)"); // for opera
 		}
 	});
 	
